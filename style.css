@@ -1,13 +1,12 @@
 @font-face {
   font-family: "ProximaNova";
-  src: url(font/ProximaNovaA-Bold.ttf) format(truetype);
+  src: url(font/ProximaNovaAltBold.otf);
 }
 
 @font-face {
   font-family: "ProximaNovaRegular";
-  src: url(font/ProximaNovaA-Regular.ttf) format(truetype);
+  src: url(font/Proxima\ Nova\ Alt\ Regular.otf);
 }
-
 
 /* General Reset */
 * {
@@ -23,24 +22,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(images/bannernew.webp);
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-left {
-    margin: 0 40px 0;
     width: 50%;
-    padding: 2rem;
-}
-
-.btn-top {
-    border: 2px solid black;
-    display: flex;
-    width: fit-content;
-    padding: 0.6rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    border-radius: 15px;
+    padding: 0 2rem 0;
 }
 
 .btn-text {
@@ -55,23 +44,22 @@
 
 .header-heading {
     font-family: "ProximaNova",monospace;
-    font-size: 3rem;
+    font-size: 2.428rem;
     color: #1c4496;
-    margin-top: 2rem;
 }
 
 .hero-btn {
-    padding: 9px 15px;
     background-color: #e6638a;
-    font-size: 16px;
     font-weight: 300;
     color: #fff;
     border: none;
     border-radius: 5px;
-    margin-top: 2rem;
     cursor: pointer;
     font-family: "ProximaNovaRegular", Helvetica, sans-serif;
     transition: all ease 0.5s;
+    font-size: 1rem;
+    padding: 9px 15px;
+    margin: 0px 16px 0px 0px;
 }
 .hero-btn:hover{
   box-shadow: 0 0 10px 0 black;
@@ -79,10 +67,7 @@
 
 .hero-right{
  width: 50%;
-}
-
-.hero-left{
-  width: 50%;
+ padding: 0 2rem 0;
 }
 
 .hero-right img {
@@ -92,16 +77,16 @@
 
 .hero-text {
     font-family: "ProximaNovaRegular", Helvetica, sans-serif;
-    margin-top: 2rem;
+    margin-top: 20px 0px;
     line-height: 2;
     color: #666666;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .hero-sub-text{
-  margin-top: 1.3rem;
-  font-size: 2rem;
+ margin: 20px 0px;
+  font-size: 1.5rem;
   display: block;
-  color: #73b6c4;
+  color: #091c09;
   font-family: "ProximaNova",monospace;
 }
 
@@ -171,9 +156,8 @@
 /* Task Section Layout */
 .task-section {
     display: flex;
-    padding: 6.3rem;
+    padding: 3.75rem 6.25rem 0rem;
     flex-wrap: wrap;
-    margin-top: 3rem;
     justify-content: space-evenly;
     overflow: hidden;
   }
@@ -181,15 +165,16 @@
   .full-width-heading{
     text-align: center;
     font-family: "ProximaNova",monospace;
-    padding: 1rem;
-    font-size: 2.3rem;
-    color: #1c4496;
-    font-weight: 600;
+    margin: 0px 0px 1.375rem;
+    font-size: 2rem;
+    color: #091C39;
+    font-weight:bolder;
   }
   .full-width-para{
     font-family: "ProximaNovaRegular", Helvetica, sans-serif;
    font-size: 1.3rem;
    text-align: center;
+   color: #666666;
   }
   
   .task-right {
@@ -205,11 +190,12 @@
     width: 100%;
     font-size: 1rem;
     line-height: 1.6;
-    color: #666666;
   }
 
   .full-width-para{
     font-family: "ProximaNovaRegular", sans-serif;
+    font-size: 1.1rem;
+    color: #666666;
   }
   
   /* Two Columns Layout */
@@ -239,9 +225,10 @@ width: 100%;
     padding: 2rem;
   }
   
-  .task-list {
+ /* .task-list {
     list-style: none;
-  }
+  }*/
+  
   
   .task-list li {
     display: flex;
@@ -249,15 +236,17 @@ width: 100%;
     margin: 1rem;
   }
   
-  .task-list li img {
+  /*.task-list li img {
     width: 20px;
     margin-right: 10px;
-  }
+  }*/
+
   
   .task-text {
-    font-size: 1.4rem;
-    color: #333; 
+    font-size: 1rem;
+    color: #666666; 
     font-family: "ProximaNovaRegular", Helvetica, sans-serif;
+    padding: 1rem;
   }
   
   /* Responsive Design */
@@ -272,7 +261,6 @@ width: 100%;
     }
   
     .left {
-      margin-right: 0;
       margin-bottom: 1rem;
     }
     
@@ -292,7 +280,7 @@ width: 100%;
       font-size: 0.9rem;
     }
     .task-section{
-      padding: 0;
+      padding: 15px;
       align-items: center;
       justify-content: center;
     }
@@ -303,256 +291,129 @@ width: 100%;
       
   }
 
-/* Task Card Styling */
-.card-container {
-  padding: 1.5rem;
-  margin-top: 5rem;
-  border-radius: 8px;
-  background-color: #edf0f6;
-}
+/*features card start hare*/
 
-.card-concainer-heading{
-  align-items: center;
-  justify-content: center; 
+.Key-features {
   text-align: center;
-  padding: 2rem;
-  font-size: 2.3rem;
-  font-family: "ProximaNova",monospace;
-  color: #1c4496;
+  padding: 3.75rem 6.25rem 0rem;
 }
 
-.card-one, 
-.card-two, 
-.card-three {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
-  background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Card Content Styling */
-.card-right {
-  flex: 1;
-}
-
-.card-right h3 {
-  font-size: 2rem;
-  color: #e6638a;
-  margin-bottom: 0.5rem;
+.kye-features-heading {
   font-family: "ProximaNova", monospace;
-  line-height: 1.2;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.card-right p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #666666;
-  font-family: "ProximaNovaRegular", sans-serif;
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center; 
 }
 
-/* Image Styling */
-.card-one img, 
-.card-two img, 
-.card-three img {
-  flex: 1;
-  max-width: 30vw;
+.card {
+  width: 30%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-1-img img, .card-1-img {
+  width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  color: #091C39;
+  margin-bottom: 0.5rem;
+  font-family: "ProximaNova", monospace;
+  min-height: 3rem;
+  font-weight: bolder;
+  text-align: start;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 1rem;
+  font-family: "ProximaNovaRegular", sans-serif;
+  flex-grow: 1;
+   text-align: start;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .Key-features {
+    padding: 2rem 1rem 0rem; /* Reduced padding on small screens */
+  }
+
+  .card-container {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+/*features card end hare*/
+
+
+/* what-makes Container start here */
+.what-makes-container {
+  border-radius: 30px;
+  padding: 3.75rem 6.25rem 0rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Heading Styling */
+.what-make-heading {
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 1.5rem;
+  font-family: "ProximaNova";
+  font-weight: bolder;
+  color: #091C39;
+}
+
+/* Paragraph Styling */
+.what-makes-para {
+  font-size: 1rem;
+  color: #666666; 
+  font-family: "ProximaNovaRegular", Helvetica, sans-serif;
+  padding: 1rem;
+  text-align: center;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .card-container {
-    padding: 1rem;
-    margin-top: 2rem;
+  .what-makes-container {
+    padding: 2rem 1rem 0rem;
   }
 
-  .card-one, 
-  .card-two, 
-  .card-three {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .card-right {
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .card-right h3 {
+  .what-make-heading {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
   }
 
-  .card-right p {
+  .what-makes-para {
     font-size: 0.9rem;
   }
-
-  .card-one img, 
-  .card-two img, 
-  .card-three img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
 }
 
-/* Extra Small Screens */
-@media (max-width: 480px) {
-  .card-right h3 {
-    font-size: 1.2rem;
-  }
-
-  .card-right p {
-    font-size: 0.85rem;
-  }
-
-  .card-one img, 
-  .card-two img, 
-  .card-three img {
-    border-radius: 4px;
-  }
-}
-
-
-/*try start*/
-.try{
-  display: flex;
-  width: 100%; 
-  margin-top: 4.4rem;
-  align-items: center;
-  gap: 2rem;
-  border-radius: 25px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #edf0f6;
-}
-
-.try-left-heading{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.try-left h3{
-  font-size: 1.5rem;
-  font-family: "ProximaNova";
-  color: #091c09;
-}
-
-.try-left img{
-  width: 4vw;
-}
-
-.try-right{
-  padding: 2rem;
-}
-
-.try-left-text{
-  font-size: 2rem;
-  font-family: "ProximaNova",monospace;
-  font-weight: 300;
-  color: #1c4496;
-}
-
-/*  try Responsive styles for mobile */
-@media (max-width: 768px) {
-  .try {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    gap: 0;
-    margin-left: 0;
-  }
-  
-  
-.try-left{
-  width: 100%;
-}
-
-.try-left img{
-  width: 50vw;
-  position:relative;
-  top: 15;
-  left: 2rem;
-  bottom: 5.7rem;
-}
-}
-
-.Kanban-board{
-  margin-top: 7rem;
-}
-
-/*try tow*/
-
-.try-two{
-  display: flex;
-  width: 100%;
-  margin-top: 5rem;
-  align-items: center;
-  gap: 2rem;
-  border-radius: 25px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #edf0f6;
-}
-
-.try-two-left{
-  width: 30%;
-}
-.try-two-left img{
-  width: 20vw;
-}
-
-.try-tow-right{
-  padding: 2rem;
-}
-
-.try-left-text{
-  font-size: 2rem;
-  font-family: "ProximaNova";
-  font-weight: 300;
-  color: #1c4496;
-}
-
-/*  try Responsive styles for mobile */
-@media (max-width: 768px) {
-  .try-two{
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    gap: 0;
-    margin-left: 0;
-  }
-  
-.try-left{
-  width: 100%;
-}
-
-.try-two-left img{
-  width: 50vw;
-  position:relative;
-  top: 2rem;
-  right: 3.7rem;
-}
-}
-
-/*what makes start*/
-
-.what-makes-container{
-width: 100%;
-background-color: #fffbf2;
-margin-top: 8rem;
-border-radius: 30px;
-}
-
-.what-makes-two{
+/*.what-makes-two{
   display: flex;
   flex-direction: row;
   padding: 2rem;
@@ -567,15 +428,6 @@ border-radius: 30px;
 
 .what-makes-two img{
   max-width: 100%;
-}
-.what-make-heading{
-  text-align: center;
-  align-items: center;
-  font-size: 2.2rem;
-  padding: 1.5rem;
-  font-family: "ProximaNova";
-  font-weight: 300;
-  color: #1c4496;
 }
 
 .what-make-btn{
@@ -595,7 +447,7 @@ border-radius: 30px;
 
 .what-make-btn:hover{
   box-shadow: 0 0 10px 0 black;
-}
+}*/
 
 /*what makes end*/
 
@@ -623,12 +475,13 @@ border-radius: 30px;
 
 /*what makes end here*/
 
+/* more-task start here */
+
 .more-task-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 1rem;
-  padding: 1rem;
-  margin-top: 1rem;
+  padding: 3.75rem 6.25rem 0rem;
 }
 
 .more-task-itme {
@@ -638,42 +491,75 @@ border-radius: 30px;
   transition: 0.5s all ease;
   text-decoration: none;
 }
-.more-task-itme:hover{
-   box-shadow: 0 0 15px rgba(0, 0, 0, 0.333);
-   cursor: pointer;
-   transform: scaleX(120deg);
+
+.more-task-itme:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.333);
+  cursor: pointer;
+  transform: scaleX(120deg);
 }
-.more-task-text{
+
+.more-task-text {
   font-size: 1.4rem;
-  font-weight: 200;
-  color: #1c4496;
+  font-weight: 900;
+  color: #091C39;
   font-family: "ProximaNova";
 }
-.more-task-itme img{
+
+.more-task-itme img {
   padding: 1rem;
   width: 100%;
 }
 
-.more-task-heading{
+.more-task-heading {
   text-align: center;
-  font-size: 2rem;
-  color: #1c4496;
+  font-size: 1.75rem;
+  color: #091C39;
   font-family: "ProximaNova";
+  margin-top: 2.4rem;
 }
-.more-task-para{
+
+.more-task-para {
   text-align: center;
   padding: 1.2rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: "ProximaNovaRegular";
+  color: #666666;
 }
+
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .more-task-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3.75rem 3.75rem 0rem; 
   }
 }
 
-/* Marquee container */
+@media (max-width: 768px) {
+  .more-task-container {
+    grid-template-columns: 1fr; 
+    width: 100%;
+    padding: 2rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .more-task-heading {
+    font-size: 1.6rem; 
+  }
+  
+  .more-task-text {
+    font-size: 1.2rem;
+  }
+  
+  .more-task-para {
+    font-size: 1rem; 
+  }
+}
+
+/* more-task end here */
+
+
+/* Integrations Marquee container start here */
 .marquee {
   width: 100%;
   overflow: hidden;
@@ -710,11 +596,12 @@ border-radius: 30px;
 }
 
 .Integrations-heading{
+  padding: 3.75rem 6.25rem 0rem;
   text-align: center;
   justify-content: center;
   font-size: 2rem;
   font-family: "ProximaNova";
-  color: #1c4496;
+  color: #091c39;
 }
 
 .integrations-para
@@ -726,6 +613,10 @@ font-size: 1.3rem;
 padding: 2rem;
 color: #666666;
 }
+
+/* Integrations Marquee container end here */
+
+/*ready-to-start here*/
 
 .ready-to-start{
   display: flex;
@@ -744,21 +635,21 @@ color: #666666;
 }
 
 .ready-to-container img{
-  width: 10vw;
-  border-radius: 50%;
+  width: 5vw;
+  border-radius: 20%;
 }
 
 .ready-to-text h5{
   align-items: center;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-family: "ProximaNova";
-  color: #1c4496;
+  color: #091c39;
 }
 .ready-to-text p{
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   padding: 2rem;
   font-family: "ProximaNovaReguler";
-  color: #666;
+  color: #666666;
 }
 .ready-to-container button{
   margin-top: 1rem;
@@ -774,6 +665,8 @@ color: #666666;
     width: 25vw;
   }
 }
+
+/*ready-to-start end  here*/
 
 /*updated design*/
 
@@ -810,7 +703,7 @@ color: #666666;
 }
 
 .testimonial-card blockquote {
-  font-style: italic;
+  font-family: "ProximaNovaRegular", Helvetica, sans-serif;
   color: #555;
   margin: 10px 0;
 }
@@ -825,8 +718,170 @@ color: #666666;
   font-size: 1.2rem;
   line-height: 1.5;
   font-family: "ProximaNova";
-  color: #e6638a;
+  color: #091c39;
 }
 .right-para{
   font-family: "ProximaNovaRegular", Helvetica, sans-serif;
 }
+
+.header-sapn{
+  color: #e6638a;
+}
+
+/*how task tracker work */
+
+/* Section Styling */
+.how-it-works {
+  padding: 3.75rem 6.25rem 0rem;
+}
+
+/* Heading Style */
+.how-it-works-heading {
+  text-align: center;
+  font-size: 1.75rem;
+  color: #091c39;
+  font-family: "ProximaNova", monospace;
+  margin-bottom: 2rem;
+}
+
+/* General styling for each step */
+.how-it-works-step {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+
+
+/* Image Styling */
+.step-img {
+  flex: 1;
+  max-width: 40%;
+}
+
+.step-img img {
+  max-width: 100%;
+}
+
+/* Text Styling */
+.step-text {
+  flex: 1;
+  max-width: 100%;
+}
+
+.step-text h3 {
+  font-size: 1.5rem;
+  color: #091c39;
+  margin-bottom: 1rem;
+  font-family: "ProximaNova", monospace;
+}
+
+.step-text p {
+  font-size: 1.2rem;
+  color: #666666;
+  line-height: 1.6;
+  font-family: "ProximaNovaRegular", sans-serif;
+}
+
+/* Responsive Layout for small screens */
+@media (max-width: 768px) {
+  .how-it-works-step {
+      flex-direction: column;
+      align-items: center;
+  }
+  .step-img, .step-text {
+      max-width: 100%;
+  }
+  .step-text h3 {
+      font-size: 1.4rem;
+  }
+  .step-text p {
+      font-size: 1rem;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .how-it-works-heading {
+      font-size: 1.6rem;
+  }
+  .step-text h3 {
+      font-size: 1.2rem;
+  }
+  .step-text p {
+      font-size: 0.9rem;
+  }
+  .step-img{
+    max-width: 100%;
+  }
+}
+
+
+.business-section{
+  padding: 3.75rem 6.25rem 0rem;
+}
+
+/*ctc section*/
+.ctc-container{
+  display: flex;
+  height: fit-content;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin: 5.4rem;
+  border-radius: 20px;
+}
+.ctc-left{
+  width: 20%;
+}
+.ctc-left img{
+  max-width: 20vw;
+}
+.ctc-heading{
+  font-size: 2rem;
+  font-family: "ProximaNova", monospace;
+  color: #091c39;
+  line-height: 2;
+}
+strong{
+  color: #000;
+}
+
+/* ctc Responsive Layout for small screens */
+@media (max-width: 768px) {
+  .ctc-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      gap: 2rem;
+  }
+  .ctc-left img {
+      max-width: 40vw;
+  }
+  .ctc-heading{
+      font-size: 1.4rem;
+  }
+  .ctc-left {
+      width: 100%;
+  }
+}
+
+/* ctc For very small screens */
+@media (max-width: 480px) {
+  .ctc-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .ctc-heading {
+      font-size: 1rem;
+  }
+  .step-text p {
+      font-size: 0.9rem;
+  }
+}
+
+/*ctc end here*/
