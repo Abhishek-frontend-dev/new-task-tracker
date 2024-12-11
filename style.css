@@ -826,7 +826,6 @@ color: #666666;
 /*ctc section*/
 .ctc-container{
   display: flex;
-  height: fit-content;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
@@ -838,7 +837,7 @@ color: #666666;
   width: 20%;
 }
 .ctc-left img{
-  max-width: 20vw;
+  max-width: 100%;
 }
 .ctc-heading{
   font-size: 2rem;
