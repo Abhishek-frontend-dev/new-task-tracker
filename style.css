@@ -844,6 +844,7 @@ color: #666666;
 }
 .ctc-left img{
   max-width: 100%;
+  padding: 1rem;
 }
 .ctc-heading{
   font-size: 2rem;
