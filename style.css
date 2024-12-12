@@ -288,6 +288,9 @@ width: 100%;
       width: 80vw;
       padding-left: 1rem;
         }
+        .task-text{
+          font-size: 0.789rem;
+        }
       
   }
 
@@ -844,7 +847,6 @@ color: #666666;
 }
 .ctc-left img{
   max-width: 100%;
-  padding: 1rem;
 }
 .ctc-heading{
   font-size: 2rem;
