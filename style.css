@@ -830,66 +830,52 @@ color: #666666;
   padding: 3.75rem 6.25rem 0rem;
 }
 
-/*ctc section*/
-.ctc-container{
+
+  /*try start*/
+.try{
   display: flex;
-  height: 15vw;
-  justify-content: space-evenly;
+  height: 25vh;
+  justify-content:center;
   align-items: center;
   text-align: center;
   background-color: #f9f9f9;
   margin: 5.4rem;
   border-radius: 20px;
-  overflow: hidden;
 }
-.ctc-left{
-  width: 17%;
+
+.try-left img{
+  width: 20vw;
 }
-.ctc-left img{
-  max-width: 100%;
+
+.try-right{
+  padding: 2rem;
 }
-.ctc-heading{
+
+.try-left-text{
   font-size: 2rem;
-  font-family: "ProximaNova", monospace;
-  color: #091c39;
-  line-height: 2;
-}
-strong{
-  color: #000;
+  font-family: "ProximaNova",monospace;
+  font-weight: 300;
+  color: #2a3278;;
 }
 
-/* ctc Responsive Layout for small screens */
+/*  try Responsive styles for mobile */
 @media (max-width: 768px) {
-  .ctc-container {
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
-      gap: 2rem;
+  .try {
+    flex-direction: column;
+    height: auto;
+    gap: 0;
   }
-  .ctc-left img {
-      max-width: 40vw;
-  }
-  .ctc-heading{
-      font-size: 1.4rem;
-  }
-  .ctc-left {
-      width: 100%;
-  }
+  
+.try-left{
+  width: 100%;
 }
 
-/* ctc For very small screens */
-@media (max-width: 480px) {
-  .ctc-container {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-  }
-  .ctc-heading {
-      font-size: 1rem;
-  }
-  .step-text p {
-      font-size: 0.9rem;
-  }
+.try-left img{
+  width: 40vw;
+}
 }
 
 /*ctc end here*/
+strong{
+  color: #000;
+}
