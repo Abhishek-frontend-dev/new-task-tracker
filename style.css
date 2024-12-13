@@ -850,6 +850,25 @@ color: #666666;
 
 .try-right{
   padding: 2rem;
+  width: 50%;
+}
+
+.try-btn{
+  background-color: #e6638a;
+  font-weight: 300;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "ProximaNovaRegular", Helvetica, sans-serif;
+  transition: all ease 0.5s;
+  font-size: 1rem;
+  padding: 9px 15px;
+  margin: 10px 16px 0px 0px;
+}
+
+.try-btn:hover{
+  box-shadow: 0 0 10px 0 black;
 }
 
 .try-left-text{
