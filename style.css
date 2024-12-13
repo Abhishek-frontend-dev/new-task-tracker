@@ -835,6 +835,7 @@ color: #666666;
 .try{
   display: flex;
   height: 25vh;
+  gap: 4rem;
   justify-content:center;
   align-items: center;
   text-align: center;
