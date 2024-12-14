@@ -1005,7 +1005,7 @@ color: #666666;
 }
 
 /* Responsive Styling */
-@media (max-width: 1400px) {
+@media (max-width: 1279px) {
   .try {
     display: flex;
     height: 30vh;
