@@ -910,57 +910,12 @@ color: #666666;
 }
 
 
-  /*try start*/
-.try{
-  display: flex;
-  height: 25vh;
-  gap: 4rem;
-  justify-content:center;
-  align-items: center;
-  text-align: center;
-  background-color: #f9f9f9;
-  margin: 5.4rem;
-  border-radius: 20px;
-}
-
-.try-left img{
-  width: 18vw;
-}
-
-.try-right{
-  padding: 2rem;
-  width: 50%;
-}
-
-.try-btn{
-  background-color: #e6638a;
-  font-weight: 300;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: "ProximaNovaRegular", Helvetica, sans-serif;
-  transition: all ease 0.5s;
-  font-size: 1rem;
-  padding: 9px 15px;
-  margin: 10px 16px 0px 0px;
-}
-
-.try-btn:hover{
-  box-shadow: 0 0 10px 0 black;
-}
-
-.try-left-text{
-  font-size: 2rem;
-  font-family: "ProximaNova",monospace;
-  font-weight: 300;
-  color: #2a3278;;
-}
+/*try start*/
 
 /* Try Section Styling */
 .try {
   display: flex;
-  height: 25vh;
+  height: 30vh;
   gap: 4rem;
   justify-content: center;
   align-items: center;
@@ -971,7 +926,7 @@ color: #666666;
 }
 
 .try-left img {
-  width: 18vw;
+  width: 20vw;
 }
 
 .try-right {
@@ -1066,6 +1021,36 @@ color: #666666;
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .try {
+    flex-wrap: nowrap;
+    height: 30vh; 
+    gap: 2rem;
+    padding: 1rem; 
+  }
+
+  .try-left img {
+    width: 20vw; 
+    height: auto;
+  }
+
+  .try-right {
+    flex: 1;
+    max-width: 50%;
+    padding: 1rem; 
+    box-sizing: border-box;
+  }
+
+  .try-left-text {
+    font-size: 1.8rem; 
+    line-height: 1.3; 
+  }
+
+  .try-btn {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+}
 /*ctc end here*/
 
 strong{
