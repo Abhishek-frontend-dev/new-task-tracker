@@ -60,7 +60,22 @@
     font-size: 1rem;
     padding: 9px 15px;
     margin: 0px 16px 0px 0px;
-    color: #1c4496;
+    text-decoration: none;
+}
+
+.hero-btn-sign-up{
+  background-color: #1c4496;
+    font-weight: 300;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "ProximaNovaaltRegular", Helvetica, sans-serif;
+    transition: all ease 0.5s;
+    font-size: 1rem;
+    padding: 9px 15px;
+    margin: 0px 16px 0px 0px;
+    text-decoration: none;
 }
 
 .hero-btn:hover{
@@ -201,8 +216,6 @@
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    align-items: center;
   }
   
   .left {
@@ -952,7 +965,7 @@ color: #666666;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #f9f9f9;
+  background:linear-gradient(130deg,#1c4496,#e6638a);
   margin: 5.4rem;
   border-radius: 20px;
 }
@@ -988,7 +1001,7 @@ color: #666666;
   font-size: 2rem;
   font-family: "ProximaNova", monospace;
   font-weight: 300;
-  color: #2a3278;
+  color: #f9f9f9;
 }
 
 /* Responsive Styling */
